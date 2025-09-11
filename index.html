@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Homepage of Dr. Zizhou Wang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+        }
+        
+        .header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+
+        
+        .main-content {
+            display: flex;
+            padding: 20px;
+            gap: 30px;
+        }
+        
+        .sidebar {
+            width: 280px;
+            flex-shrink: 0;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+            object-fit: cover;
+        }
+        
+        .profile-info {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .profile-info h2 {
+            margin: 0 0 5px 0;
+            color: #2c3e50;
+        }
+        
+        .profile-info p {
+            margin: 5px 0;
+            color: #666;
+        }
+        
+        .contact-links {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .contact-links a {
+            display: block;
+            margin: 5px 0;
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+        
+        .content {
+            flex: 1;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .intro {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        .education-item, .experience-item, .project-item, .honor-item, .skill-category {
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .publication-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .publication-item h4 {
+            margin: 0 0 10px 0;
+            color: #2c3e50;
+        }
+        
+        .publication-item .authors {
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .publication-item .journal {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .year-header {
+            color: #2c3e50;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 30px 0 20px 0;
+            border-bottom: 1px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        
+        .map-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #3498db;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Personal Homepage of Dr. Wang</h1>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <img src="assets/portrait.jpg" alt="Dr. Zizhou Wang" class="profile-img">
+                
+                <div class="profile-info">
+                    <h2>Zizhou Wang</h2>
+                    <p>Scientist at IHPC, A*STAR</p>
+                </div>
+                
+                <div class="contact-links">
+                    <p>📍 Singapore</p>
+                    <a href="mailto:wang_zizhou@a-star.edu.sg">✉️ Email</a>
+                    <a href="https://scholar.google.com/citations?user=nk4iMegAAAAJ&hl=en">🎓 Google Scholar</a>
+                    <a href="https://orcid.org/0000-0003-2234-9409">🆔 ORCID</a>
+                </div>
+                
+                <div class="section">
+                    <h3>Education</h3>
+                    <div class="education-item">
+                        <strong>2016/09 - 2022/06:</strong> Ph.D., Computer Science, Sichuan University
+                    </div>
+                    <div class="education-item">
+                        <strong>2012/09 - 2016/06:</strong> B.Eng., Computer Science, Sichuan University
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3>Work Experience</h3>
+                    <div class="experience-item">
+                        <strong>2022/08 - Now:</strong> Scientist, IHPC, A*STAR, Singapore
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3>Skills</h3>
+                    <div class="skill-category">
+                        <strong>Programming:</strong> Python, C++, Matlab, CUDA
+                    </div>
+                    <div class="skill-category">
+                        <strong>Writing:</strong> LaTeX, Markdown
+                    </div>
+                    <div class="skill-category">
+                        <strong>Languages:</strong> Chinese, English
+                    </div>
+                    <div class="skill-category">
+                        <strong>Sports:</strong> Badminton, Swimming
+                    </div>
+                </div>
+            </aside>
+            
+            <main class="content">
+                <div class="intro">
+                    <h2>Hello, welcome to Zizhou Wang's homepage!</h2>
+                    <p>I am a research scientist at the Institute of High Performance Computing (IHPC), Agency for Science, Technology and Research (A*STAR), Singapore. My research focuses on AI safety and robustness, with applications in healthcare and safety-critical domains. I have published papers in top-tier journals and conferences, including IEEE Transactions on Neural Networks and Learning Systems (TNNLS), IEEE Transactions on Cybernetics (TCyb), and IEEE Transactions on Medical Imaging (TMI).
+
+                    <p>Prior to joining A*STAR, I received my Ph.D. in Computer Science from Sichuan University, China, in 2022, under the supervision of Professor Lei Zhang. My research interests broadly span AI safety, robust AI, domain generalisation, and trustworthy AI for healthcare.
+                    
+                    
+                    <p><strong>Contact:</strong> wang_zizhou@a-star.edu.sg</p>
+                </div>
+                
+                <section class="section">
+                  <h2>Recent Publications</h2>
+
+                  <div class="year-header">2025</div>
+                  <div class="publication-item">
+                    <h4>A Multi-Stage Multi-Modal Learning Algorithm with Adaptive Multimodal Fusion for Improving Multi-Label Skin Lesion Classification</h4>
+                    <div class="authors">Zuo, L., <strong>Zizhou Wang</strong>, Wang, Y.</div>
+                    <div class="journal">Artificial Intelligence in Medicine, 2025</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>GAPNet: A Lightweight Framework for Image and Video Salient Object Detection via Granularity-Aware Paradigm</h4>
+                    <div class="authors">Wu, Y.-H., Liu, W., Zhu, Z.-X., <strong>Zizhou Wang</strong>, Liu, Y., Zhen, L.</div>
+                    <div class="journal">Machine Intelligence Research (MIR), 2025</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>GapMatch: Bridging Instance and Model Perturbations for Enhanced Semi-Supervised Medical Image Segmentation</h4>
+                    <div class="authors">Huang, W., Zhang, L., <strong>Zizhou Wang</strong>, Wang, Y.</div>
+                    <div class="journal">Proceedings of AAAI, 2025</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>Cross-Modal Obfuscation for Jailbreak Attacks on Large Vision-Language Models</h4>
+                    <div class="authors">Jiang, L., Zhang, Z., <strong>Zizhou Wang</strong>, Sun, X., Li, Z., Zhen, L., Xu, X.</div>
+                    <div class="journal">arXiv preprint arXiv:2506.16760, 2025</div>
+                  </div>
+
+                  <div class="year-header">2024</div>
+                  <div class="publication-item">
+                    <h4>Geometric Correspondence-Based Multimodal Learning for Ophthalmic Image Analysis</h4>
+                    <div class="authors">Wang, Y., Zhen, L., … <strong>Zizhou Wang</strong>, et al.</div>
+                    <div class="journal">IEEE Transactions on Medical Imaging, 2024</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>MedNAS: Multiscale Training-Free Neural Architecture Search for Medical Image Analysis</h4>
+                    <div class="authors"><strong>Zizhou Wang</strong>, Wang, Y., Feng, Y., Du, J., Liu, Y., Goh, R.S.M., Zhen, L.</div>
+                    <div class="journal">IEEE Transactions on Evolutionary Computation, 2024</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>Continuous Disentangled Joint Space Learning for Domain Generalization</h4>
+                    <div class="authors"><strong>Zizhou Wang</strong>, Wang, Y., Feng, Y., Du, J., Liu, Y., Goh, R.S.M., Zhen, L.</div>
+                    <div class="journal">IEEE Transactions on Neural Networks and Learning Systems, 2024</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>Adaptive Annotation Correlation Based Multi-Annotation Learning for Calibrated Medical Image Segmentation</h4>
+                    <div class="authors">Huang, W., Zhang, L., Shu, X., <strong>Zizhou Wang</strong>, Yi, Z.</div>
+                    <div class="journal">IEEE Journal of Biomedical and Health Informatics, 2024</div>
+                  </div>
+
+                  <div class="publication-item">
+                    <h4>Exploring Inherent Consistency for Semi-Supervised Anatomical Structure Segmentation</h4>
+                    <div class="authors">Huang, W., Zhang, L., Shu, X., Wang, L., <strong>Zizhou Wang</strong></div>
+                    <div class="journal">IEEE Transactions on Medical Imaging, 2024</div>
+                  </div>
+
+                  <section class="section">
+
+                  <div class="year-header">2023</div>
+                  <div class="publication-item">
+                    <h4>Contrastive Domain Adaptation with Consistency Match for Automated Pneumonia Diagnosis</h4>
+                    <div class="authors">Feng, Y., <strong>Zizhou Wang</strong>, Xu, X., Wang, Y., Fu, H., Li, S., Zhen, L., Lei, X., Cui, Y., Ting, J.S.Z., et al.</div>
+                    <div class="journal">Medical Image Analysis, 83, 102664, 2023</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Learning Representation via Indirect Feature Decorrelation with Bi-Vector-Based Contrastive Learning for Clustering</h4>
+                    <div class="authors">Xie, X., Zhang, L., Wang, Y., <strong>Zizhou Wang</strong>, Hua, Y.</div>
+                    <div class="journal">Information Sciences, 625, 141–156, 2023</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Fine-Grained Recognition: Multi-Granularity Labels and Category Similarity Matrix</h4>
+                    <div class="authors">Shu, X., Zhang, L., <strong>Zizhou Wang</strong>, Wang, L., Yi, Z.</div>
+                    <div class="journal">Knowledge-Based Systems, 273, 110599, 2023</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Consistent Representation via Contrastive Learning for Skin Lesion Diagnosis</h4>
+                    <div class="authors"><strong>Zizhou Wang</strong>, Zhang, L., Shu, X., Wang, Y., Feng, Y.</div>
+                    <div class="journal">Computer Methods and Programs in Biomedicine, 242, 107826, 2023</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Performance Test of a Well-Trained Model for Meningioma Segmentation in Health Care Centers</h4>
+                    <div class="authors">Chen, C., Teng, Y., Tan, S., <strong>Zizhou Wang</strong>, Zhang, L., Xu, J.</div>
+                    <div class="journal">JMIR, 25, e44119, 2023</div>
+                  </div>
+
+                  <div class="year-header">2022</div>
+                  <div class="publication-item">
+                    <h4>Uncertainty-Guided Voxel-Level Supervised Contrastive Learning for Semi-Supervised Medical Image Segmentation</h4>
+                    <div class="authors">Hua, Y., Shu, X., <strong>Zizhou Wang</strong>, Zhang, L.</div>
+                    <div class="journal">International Journal of Neural Systems, 32(4), 2250016, 2022</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Feature Pyramid Network with Level-Aware Attention for Meningioma Segmentation</h4>
+                    <div class="authors">Huang, W., Shu, X., <strong>Zizhou Wang</strong>, Zhang, L., Chen, C., Xu, J., Yi, Z.</div>
+                    <div class="journal">IEEE Transactions on Emerging Topics in Computational Intelligence, 6(5), 1201–1210, 2022</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Boundary-Aware Network with Topological Consistency Constraint for Optic Chiasm Segmentation</h4>
+                    <div class="authors">Huang, W., Shu, X., <strong>Zizhou Wang</strong>, Chen, C., Zhang, Y., Zhang, L., Xu, J.</div>
+                    <div class="journal">IEEE Transactions on Artificial Intelligence, 4(6), 1504–1513, 2022</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>A Feature Space-Restricted Attention Attack on Medical Deep Learning Systems</h4>
+                    <div class="authors"><strong>Zizhou Wang</strong>, Shu, X., Wang, Y., Feng, Y., Zhang, L., Yi, Z.</div>
+                    <div class="journal">IEEE Transactions on Cybernetics, 53(8), 5323–5335, 2022</div>
+                  </div>
+                  <div class="publication-item">
+                    <h4>Deep Slice-Crossed Network with Local Weighted Loss for Brain Metastases Segmentation</h4>
+                    <div class="authors">Shu, X., Zhang, L., Qu, J., Wang, L., <strong>Zizhou Wang</strong>, Zhang, W., Wang, Y., Lui, S.</div>
+                    <div class="journal">IEEE Transactions on Cognitive and Developmental Systems, 15(3), 1419–1429, 2022</div>
+                  </div>
+                </section>
+
+
+                
+                <section class="section">
+                    <h2>Patents & Technology Disclosures</h2>
+                    <div class="honor-item">
+                        <strong>Patent:</strong> Fast segmentation and characterization method for meningioma based on deep neural, China National Intellectual Property Administration, No. CN202110161083.2
+                    </div>
+                    <div class="honor-item">
+                        <strong>Patent:</strong> A neural network-based method for automatic segmentation of optic nerve and measurement of compression, China National Intellectual Property Administration, No. CN202111310100.0
+                    </div>
+                    <div class="honor-item">
+                        <strong>Patent:</strong> An automatic method for outlining cerebral arteries based on deep neural, China National Intellectual Property Administration, No. CN202111310166.X
+                    </div>
+                    <div class="honor-item">
+                        <strong>Technology Disclosure:</strong> A Deep Learning-Based Method for Self-Monitoring of Atopic Dermatitis Using Smartphones, No. IHPC-TD-CI-2024-037
+                    </div>
+                    <div class="honor-item">
+                        <strong>Technology Disclosure:</strong> AI-powered Skin Ageing Monitoring and Management via Mobile Devices, No. IHPC-TD-CI-2024-072
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2>Awards & Honors</h2>
+                    <div class="honor-item">
+                        <strong>2025:</strong> <span class="highlight">3rd Place</span> in Global Challenge for Safe and Secure LLMs (Track 2: Defence)
+                    </div>
+                    <div class="honor-item">
+                        <strong>2024:</strong> <span class="highlight">4th Place</span> in Global Challenge for Safe and Secure LLMs (Track 1: Attack)
+                    </div>
+                    <div class="honor-item">
+                        <strong>2018:</strong> <span class="highlight">3rd Place</span> in Stanford MURA Bone X-Ray Deep Learning Competition
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <h2>Projects</h2>
+                    <div class="project-item">
+                        <strong>2023 - 2026:</strong> Project manager & Tech leader of WP3: Development of Stable Robust and Secure Intelligent Systems for Autonomous Vehicles (Stage 1), AISG Robust AI Grand Challenge
+                    </div>
+                    <div class="project-item">
+                        <strong>2022 - 2024:</strong> Core member: MARIO: Multimodal AI-Driven Decision Making for Ophthalmology, RIE AME Programmatic Fund
+                    </div>
+                    <div class="project-item">
+                        <strong>2022 - 2024:</strong> Tech leader: Artificial Intelligence for Patient Self-Monitoring of Atopic Dermatitis, SingHealth Duke-NUS Paediatrics Academic Clinical Programme
+                    </div>
+                </section>
+
+
+                <section class="section">
+                  <h2>Professional Services</h2>
+                    <div class="project-item">
+                      <strong>2024:</strong> The algorithms I developed and the resulting products were selected for showcase at 
+                      <a href="https://www.a-star.edu.sg/ihpc/events/2024" target="_blank">
+                        <em>Singapore SWITCH 2024</em>
+                      </a>.
+                    </div>
+
+                    <div class="project-item">
+                        <strong>2024:</strong> Invited to present research outcomes at the <em>Healthcare AI Symposium 2024</em>.
+                    </div>
+                    <div class="project-item">
+                        <strong>2025:</strong> Invited to present research outcomes at the <em>Healthcare AI Symposium 2025</em>.
+                    </div>
+                    <div class="project-item">
+                      <strong>ADimaster:</strong> Featured in 
+                      <a href="https://www.a-star.edu.sg/ihpc/ihpc-tech-hub/features/hhp/adimaster" target="_blank">
+                        <em>IHPC Tech Hub</em>
+                      </a>, highlighting multiple research outcomes I contributed to.
+                    </div>
+
+                    <div class="project-item">
+                        <strong>Reviewer:</strong> IEEE TNNLS, IEEE TCDS, IEEE JBHI, Medical Image Analysis (MIA), Knowledge-Based Systems (KBS), and others.
+                    </div>
+                </section>
+
+                
+            </main>
+        </div>
+        
+        <footer style="background-color: #2c3e50; color: white; text-align: center; padding: 20px;">
+            <p>© 2025 Dr. Zizhou Wang.</p>
+            <p>Site last updated 2025-09-11</p>
+        </footer>
+    </div>
+</body>
+</html>
